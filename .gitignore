@@ -2,3 +2,16 @@
 *.pot
 *.pyc
 local_settings.py
+bin
+build
+include
+lib
+local
+man
+share
+Scripts
+.Python
+*.pyc
+*~
+*.db
+.DS_Store
