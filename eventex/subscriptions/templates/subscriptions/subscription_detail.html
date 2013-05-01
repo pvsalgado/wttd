@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+{% extends 'base.html' %}
+{% block content %}
+        <p>Parabéns {{ subscription.name}},</p>
+        <p>sua inscrição foi realizada em {{ subscription.created_at|date:"d/m/y"}}.</p>
+        <p>Em breve, entraremos em contato pelo
+            {% if subscription.phone %}
+            telefone {{subscription.phone}}
+            {% else %}
+            email {{ subscription.email }}
+            {% endif %}
+        </p>
+{% endblock content %}
+
